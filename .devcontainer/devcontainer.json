@@ -1,0 +1,14 @@
+{
+  "name": "fullstack-codespace",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "backend",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "shutdownAction": "stopCompose",
+  "forwardPorts": [8080, 4200],
+  "portsAttributes": {
+    "8080": { "label": "Backend" },
+    "4200": { "label": "Frontend", "onAutoForward": "openBrowser" }
+  },
+  "postCreateCommand": "git submodule update --init --recursive && docker compose up -d --build",
+  "remoteUser": "vscode"
+}
