@@ -1,0 +1,6 @@
+[submodule "building-manager-front-end"]
+	path = building-manager-front-end
+	url = https://github.com/pamp24/building-manager-front-end.git
+[submodule "building-manager-network"]
+	path = building-manager-network
+	url = https://github.com/pamp24/building-manager-network.git
